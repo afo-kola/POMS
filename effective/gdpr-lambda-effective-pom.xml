@@ -1,8 +1,22 @@
 [INFO] Scanning for projects...
 Downloading from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/codehaus/mojo/flatten-maven-plugin/1.5.0/flatten-maven-plugin-1.5.0.pom
-Progress (1): 7.1/11 kBProgress (1): 11 kB                       Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/codehaus/mojo/flatten-maven-plugin/1.5.0/flatten-maven-plugin-1.5.0.pom (11 kB at 8.5 kB/s)
+Progress (1): 7.1/11 kB
+Progress (1): 11 kB    
+                   
+Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/codehaus/mojo/flatten-maven-plugin/1.5.0/flatten-maven-plugin-1.5.0.pom (11 kB at 8.5 kB/s)
 Downloading from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/codehaus/mojo/flatten-maven-plugin/1.5.0/flatten-maven-plugin-1.5.0.jar
-Progress (1): 7.1/120 kBProgress (1): 15/120 kB Progress (1): 32/120 kBProgress (1): 32/120 kBProgress (1): 48/120 kBProgress (1): 65/120 kBProgress (1): 81/120 kBProgress (1): 98/120 kBProgress (1): 114/120 kBProgress (1): 120 kB                        Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/codehaus/mojo/flatten-maven-plugin/1.5.0/flatten-maven-plugin-1.5.0.jar (120 kB at 62 kB/s)
+Progress (1): 7.1/120 kB
+Progress (1): 15/120 kB 
+Progress (1): 32/120 kB
+Progress (1): 32/120 kB
+Progress (1): 48/120 kB
+Progress (1): 65/120 kB
+Progress (1): 81/120 kB
+Progress (1): 98/120 kB
+Progress (1): 114/120 kB
+Progress (1): 120 kB    
+                    
+Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/codehaus/mojo/flatten-maven-plugin/1.5.0/flatten-maven-plugin-1.5.0.jar (120 kB at 62 kB/s)
 [INFO] Artifact org.apache.maven.plugins:maven-assembly-plugin:pom:3.7.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [inin-artifactory-mirror (https://articache.ininica.com/artifactory/inin-maven-mirror-remote, default, releases)]
 [INFO] Artifact org.apache.maven.plugins:maven-assembly-plugin:pom:3.7.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [inin-artifactory-mirror (https://articache.ininica.com/artifactory/inin-maven-mirror-remote, default, releases)]
 Downloading from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/apache/maven/plugins/maven-assembly-plugin/3.7.1/maven-assembly-plugin-3.7.1.pom
@@ -24,7 +38,9 @@ Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifacto
 Downloading from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/apache/maven/plugins/maven-dependency-plugin/3.7.0/maven-dependency-plugin-3.7.0.jar
 Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/apache/maven/plugins/maven-dependency-plugin/3.7.0/maven-dependency-plugin-3.7.0.jar (0 B at 0 B/s)
 Downloading from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/apache/maven/plugins/maven-help-plugin/maven-metadata.xml
-Progress (1): 887 B                   Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/apache/maven/plugins/maven-help-plugin/maven-metadata.xml (887 B at 6.9 kB/s)
+Progress (1): 887 B
+                   
+Downloaded from inin-artifactory-mirror: https://articache.ininica.com/artifactory/inin-maven-mirror-remote/org/apache/maven/plugins/maven-help-plugin/maven-metadata.xml (887 B at 6.9 kB/s)
 [INFO] 
 [INFO] --< com.genesys.journey:journey-event-store-service-java-gdpr-lambda >--
 [INFO] Building journey-event-store-service-java-gdpr-lambda 0.0.0
