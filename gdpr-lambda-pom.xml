@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>journey-event-store-service-java-gdpr-lambda</artifactId>
+    <version>${revision}</version>
+
+    <parent>
+        <groupId>com.genesys.journey</groupId>
+        <artifactId>journey-java-function-parent</artifactId>
+        <!-- The version used in the service pom and lambda poms should match -->
+        <version>54.2.1-404</version>
+        <relativePath>../journey-java-function-parent-pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <!-- Overrides default Checkstyle suppressions defined in journey-java-common-checkstyle -->
+        <checkstyle.suppressions.location>journey-data-suppressions.xml</checkstyle.suppressions.location>
+    </properties>
+
+    <dependencies>
+        <!--Event Store Common Module-->
+        <dependency>
+            <groupId>com.genesys.journey</groupId>
+            <artifactId>event-store-service-java-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--Journey Dependencies-->
+        <dependency>
+            <groupId>com.genesys.journey</groupId>
+            <artifactId>journey-java-common-dynamo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.genesys.journey</groupId>
+            <artifactId>journey-java-common-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.genesys.journey</groupId>
+            <artifactId>journey-java-common-sns-contract</artifactId>
+        </dependency>
+        <!--Genesys Dependencies-->
+        <!-- Imported after journey-java-commons so those dependencies have precedence when picking versions of their dependencies -->
+        <dependency>
+            <groupId>com.inin.gdpr</groupId>
+            <artifactId>gdpr-library</artifactId>
+            <version>${gdpr.library.version}</version>
+            <exclusions>
+                <!-- Excluding because of warning: -->
+                <!-- Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts -->
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--Third Party Dependencies-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!--Test Dependencies-->
+        <dependency>
+            <groupId>com.genesys.amazon</groupId>
+            <artifactId>genesys-amazon-dynamodb-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>DynamoDBLocal</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>inin-maven-mirror</id>
+            <name>ININ Maven Mirror</name>
+            <url>https://purecloud.jfrog.io/purecloud/inin-maven-mirror</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <finalName>journey-event-store-service-java-gdpr-lambda</finalName>
+    </build>
+
+    <scm>
+        <developerConnection>scm:git:git@bitbucket.org:inindca/event-store-service-java.git</developerConnection>
+        <connection>scm:git:git@bitbucket.org:inindca/event-store-service-java.git</connection>
+        <url>https://bitbucket.org/inindca/event-store-service-java</url>
+        <tag>HEAD</tag>
+    </scm>
+</project>
